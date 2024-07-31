@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-thymeleaf-view-example
-        image: praveendshankar0502/java:replaceimagetag
+        image: praveendshankar0502/java:replaceImageTag
         ports:
         - containerPort: 8080
