@@ -56,8 +56,8 @@ pipeline {
                     git config user.email "praveendshankar12@gmail.com"
                     git config user.name "PraveenDShankar"
                     BUILD_NUMBER=${BUILD_NUMBER}
-                    sed -i "s/replaceImageTag/${BUILD_NUMBER}/g" spring-boot-thymeleaf-view-example/k8s/deployment.yaml
-                    git add spring-boot-thymeleaf-view-example/k8s/deployment.yaml
+                    sed -i "s/replaceImageTag/${BUILD_NUMBER}/g" spring-boot-thymeleaf-view-example/k8s/deployement.yaml
+                    git add spring-boot-thymeleaf-view-example/k8s/deployement.yaml
                     git commit -m "Update deployment image to version ${BUILD_NUMBER}"
                     git push https://${GITHUB_TOKEN}@github.com/${GIT_USER_NAME}/${GIT_REPO_NAME} HEAD:main
                 '''
