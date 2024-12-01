@@ -1,98 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen Shankar's Technical Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
 
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+        }
 
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-button:hover {
-  opacity: 0.8;
-}
+        h2 {
+            color: #35424a;
+        }
 
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
+        ul {
+            list-style: none;
+            padding: 0;
+        }
 
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
+        li {
+            margin: 5px 0;
+        }
 
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
+        a {
+            color: #35424a;
+            text-decoration: none;
+        }
 
-.container {
-  padding: 16px;
-}
+        a:hover {
+            text-decoration: underline;
+        }
 
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-</style>
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
+    <header>
+        <h1>Praveen Shankar's Technical Portfolio</h1>
+        <p>DevOps & Cloud Specialist</p>
+    </header>
 
-<h2>Login Form</h2>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Praveen Shankar! I'm a passionate DevOps engineer with extensive experience in cloud technologies. My goal is to bridge the gap between development and operations, enabling organizations to deliver applications and services at high velocity.</p>
+    </section>
 
-<form action="/action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Cloud Platforms: AWS, Azure, Google Cloud Platform</li>
+            <li>Containerization: Docker, Kubernetes</li>
+            <li>CI/CD Tools: Jenkins, GitLab CI, CircleCI</li>
+            <li>Configuration Management: Ansible, Terraform, Chef</li>
+            <li>Scripting Languages: Python, Bash</li>
+            <li>Monitoring & Logging: Prometheus, ELK Stack, Grafana</li>
+        </ul>
+    </section>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Automated CI/CD Pipeline</strong>
+                <p>Developed an automated CI/CD pipeline using Jenkins and Docker, which reduced deployment time by 30%.</p>
+            </li>
+            <li>
+                <strong>Cloud Migration</strong>
+                <p>Led the migration of on-premises applications to AWS, ensuring minimal downtime and improved scalability.</p>
+            </li>
+            <li>
+                <strong>Kubernetes Cluster Setup</strong>
+                <p>Designed and implemented a highly available Kubernetes cluster for microservices deployment.</p>
+            </li>
+        </ul>
+    </section>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-        
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn!</p>
+        <p>Email: <a href="mailto:praveenshankar@example.com">praveenshankar@example.com</a></p>
+        <!--<p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">linkedin.com/in/praveenshankar</a></p>-->
+    </section>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
-
+    <footer>
+        <p>&copy; 2024 Praveen Shankar. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
